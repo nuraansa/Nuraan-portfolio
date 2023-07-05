@@ -1,13 +1,15 @@
 <template>
-    <div>
-        <h1>Contact</h1>
-    </div>
+    <Contact/>
 </template>
 
 <script>
-    export default {
-        
+    import Contact from '@/components/ContactComp.vue'
+export default {
+    name: 'ContactView',
+    components: {
+        Contact
     }
+}
 </script>
 
 <style scoped>

@@ -25,4 +25,7 @@ export default {
   color: #2F5D62;
 }
 
+::-webkit-scrollbar{
+  display: none;
+}
 </style>
