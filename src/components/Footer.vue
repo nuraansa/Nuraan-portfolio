@@ -1,6 +1,6 @@
 <template>
   <div>
-    <footer class="foot mx-auto p-2">Copyright 2023</footer>
+    <footer class="foot mx-auto p-2">Copyright &copy; 2023</footer>
   </div>
 </template>
 
@@ -12,9 +12,10 @@ export default {
 
 <style scoped>
 .foot {
-  background: rgb(233, 198, 233);
+  background: #5E8B7E;
   bottom: 0;
   width: 100%;
   height: 3rem;
+  color: #DFEEEA;
 }
 </style>
