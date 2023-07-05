@@ -1,14 +1,35 @@
 <template>
-        <nav>
-            <img src="https://i.postimg.cc/fLMv0VCH/Black-Pink-Bold-Elegant-Monogram-Personal-Brand-Logo-removebg-preview.png"
-            alt="logo" id="logo">
-            <router-link to="/">Home</router-link> |
-            <router-link to="/about">About</router-link> |
-            <router-link to="/resume">Resume</router-link> |
-            <router-link to="/projects">Projects</router-link> |
-            <router-link to="/testimonials">Testimonials</router-link> |
-            <router-link to="/contact">Contact</router-link>
-        </nav>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="#"> <img src="https://i.postimg.cc/R0Fmf6CL/logo.png" class="logo" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <router-link to="/">Home</router-link> |
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/about">About</router-link> |
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/resume">Resume</router-link> |
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/projects">Projects</router-link> |
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/testimonials">Testimonials</router-link> |
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/contact">Contact</router-link>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </template>
 
 <script>
@@ -19,9 +40,12 @@ export default {
 
 <style scoped>
 nav {
-    padding: 20px;
-    background: #5E8B7E;
-    font-size: 1.4rem;
+    background: #A0C49D;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
 }
 
 nav a {
@@ -35,10 +59,10 @@ nav a:hover {
 }
 
 nav a.router-link-exact-active {
-    color: rgb(251, 248, 251);
+    color: #2F5D62;
 }
 
-#logo {
-    width: 4rem;
+.logo {
+    width: 9rem;
 }
 </style>

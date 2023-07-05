@@ -12,7 +12,7 @@ export default {
 
 <style scoped>
 .foot {
-  background: #5E8B7E;
+  background:  #A0C49D;
   bottom: 0;
   width: 100%;
   height: 3rem;

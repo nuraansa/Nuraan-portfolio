@@ -68,7 +68,7 @@ export default {
 
 <style scoped>
 .bg {
-    background: #A7C4BC;
+    background: #6dbf80;
 }
 
 .about-info {
@@ -124,12 +124,12 @@ export default {
 #res {
     text-decoration: none;
     color: #DFEEEA; 
-    background: #5E8B7E;
+    background:  #45935f;
 }
 
 #res:hover {
-    background: #A7C4BC;
-    color: #5E8B7E;
+    background:  #7bce97;
+    color:  #45935f;
     border: 2px solid #5E8B7E;
     text-decoration: none;
 }
