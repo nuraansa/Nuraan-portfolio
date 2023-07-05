@@ -1,17 +1,17 @@
 <template>
     <div class="bg">
-        <h1 class="p-3">Resume</h1>
-        <div class="container">
-            <div class="card p-5">
-                <div class="row">
-                    <div class="col">
+        <h1 class="display-1 text-center p-5">Resume</h1>
+        <div class="container text-start">
+            <div class="card p-5 in">
+                <div class="row mx-auto">
+                    <div class="col-6">
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">DOB: 14 February 2000</li>
                             <li class="list-group-item">Linkedin: </li>
                             <li class="list-group-item">Email: nuraansa1@gmail.com</li>
                         </ul>
                     </div>
-                    <div class="col">
+                    <div class="col-6">
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">City: Cape Town</li>
                             <li class="list-group-item">Cell: 012-345-6789</li>
@@ -24,18 +24,19 @@
             </div> -->
             </div>
         </div>
-        <div class="container p-2">
-            <div class="card p-3">
-                <div class="row g-0 p-3">
-                    <h1>Education</h1>
-                    <hr>
+        <div class="container">
+            <h1 class="display-3 p-3">Education</h1>
+            <div class="card p-4 edu text-start border">
+                <div class="row g-0">
                     <div class="col-md-8" v-for="item in education" :key="item.id">
-                        <div class="card-body">
+                        <div class="card-body ex">
                             <h5 class="card-title">{{ item.year }}</h5>
                             <p class="card-text">{{ item.description }}</p>
                         </div>
+                        <hr>
                     </div>
                     <div class="col-md-4">
+                        <img src="https://i.postimg.cc/MGsGH8GH/asal-lotfi-8e-PZbdxnpi0-unsplash.jpg" alt="img" class="w-100 book">
                         <!-- <img src="https://i.postimg.cc/bJwBtJb3/reading.jpg" class="img-fluid" alt="..."> -->
                     </div>
                 </div>
@@ -109,6 +110,24 @@ export default {
 
 <style scoped>
 .bg {
-    background: #C4D7B2;
+    background: #A7C4BC;
+}
+h1 {
+  text-shadow: 2px 2px #DFEEEA;
+}
+.in{
+    background-color: #DFEEEA;
+}
+.ex{
+    padding: 0.5px;
+}
+.edu {
+    background-color: #DFEEEA;
+}
+.book{
+    margin-top: -24rem;
+}
+.list-group-item{
+    width: 20rem;
 }
 </style>

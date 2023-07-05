@@ -1,16 +1,16 @@
 <template>
     <div class="bg">
-        <h1 class="display-1">Projects</h1>
+        <h1 class="display-1 p-5">Projects</h1>
         <div class="container p-4">
             <div class="row row-cols-1 row-cols-md-3 row-cols-sm-1 g-4">
                 <div class="col p-2" v-for="item in projects" :key="item.id">
-                    <div class="card mb-3 shadow-lg" style="width: 20rem;">
+                    <div class="card mb-3 shadow-lg h-100" style="width: 20rem;">
                         <img :src="item.image" class="card-img-top" :alt="item.id">
                         <div class="card-body">
                             <h5 class="card-title">{{ item.name }}</h5>
                             <p class="card-text">{{ item.description }}</p>
-                            <button class="btn m-3 p-3 res shadow"><a :href="item.netlify">Netlify</a></button>
-                            <button class="btn m-3 p-3 res shadow"><a :href="item.github">Github</a></button>
+                            <button class="btn m-3 p-3 res shadow-lg"><a :href="item.netlify">Netlify</a></button>
+                            <button class="btn m-3 p-3 res shadow-lg"><a :href="item.github">Github</a></button>
                         </div>
                     </div>
                 </div>
@@ -34,21 +34,28 @@ export default {
 
 <style scoped>
 .bg {
-    background: #C4D7B2;
+    background: #A7C4BC;
 }
-
-.res{
-    background: #C4D7B2;
+h1 {
+  text-shadow: 2px 2px #DFEEEA;
+}
+.res {
+    text-decoration: none;
+    color: #DFEEEA; 
+    background:  #5E8B7E;
 }
 a{
     text-decoration: none;
-    color: #070707;
+    color: #DFEEEA; 
 }
-
-.res:hover {
-    background: #A7C4BC;
-    color: #5E8B7E;
-    border: 2px solid #5E8B7E;
+.res a:hover {
+    background:  #DFEEEA;
+    color:  #5E8B7E;
     text-decoration: none;
+}
+.res:hover {
+    background:  #DFEEEA;
+    color:  #5E8B7E;
+    border: 2px solid #5E8B7E;
 }
 </style>

@@ -1,21 +1,21 @@
 <template>
     <div class="bg">
         <div class="container about">
-            <h1 class="text-center p-5">Welcome to my portfolio!</h1>
+            <h1 class="display-1 text-center p-5">Welcome to my portfolio!</h1>
             <div class="container text-center p-2">
                 <div class="row">
                     <div class="col">
                         <!-- <h2>I'm Nuraan Samodien</h2> -->
-                        <img id="me" src="https://i.postimg.cc/h4M6rckp/flork.png" alt="me" style="width: 18rem">
+                        <img class="rounded shadow" id="me" src="https://i.postimg.cc/y8WsnmxC/Screenshot-2023-07-05-at-6-07-02-PM-removebg-preview.png" alt="me" style="width: 18rem">
                     </div>
                     <div class="col">
-                        <h1>About Me</h1>
-                        <p class="about-info"> Hello World! My name is Nuraan Samodien Davids.
-                            I enjoy acquiring new knowledge and mastering new skills. <br> My interest in computers was
+                        <h1>About Me</h1> <hr>
+                        <p class="about-info lh-base"> Hello World! My name is Nuraan Samodien Davids.
+                            I enjoy acquiring new knowledge and mastering new skills. <br> My interest in computers
                             sparked
                             years ago
                             when I
-                            was a little girl, I used to enjoy experimenting,learning and figuring out new things on our
+                            was a little girl, I enjoyed experimenting, learning and figuring out new things on our
                             family
                             computer.
                             <br>
@@ -37,8 +37,8 @@
                                 <div class="flip-card-front">
                                     <img :src="item.image" :alt="item.title" style="height: 300px; width: 300px" />
                                 </div>
-                                <div class="flip-card-back">
-                                    <h2>{{ item.title }}</h2>
+                                <div class="flip-card-back p-2">
+                                    <h2>{{ item.title }}</h2> <hr>
                                     <p>
                                         {{ item.description }}
                                     </p>
@@ -48,7 +48,7 @@
                     </div>
                 </div>
             </div>
-            <router-link to="/resume" id="res" class="btn btn-light m-3 p-3">View Resume</router-link>
+            <router-link to="/resume" id="res" class="btn btn-light m-3 p-3 ">View Resume</router-link>
         </div>
     </div>
 </template>
@@ -68,11 +68,14 @@ export default {
 
 <style scoped>
 .bg {
-    background: #6dbf80;
+    background: #A7C4BC;
 }
 
 .about-info {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+}
+h1 {
+  text-shadow: 2px 2px #DFEEEA;
 }
 
 /* flip-card */
@@ -124,12 +127,12 @@ export default {
 #res {
     text-decoration: none;
     color: #DFEEEA; 
-    background:  #45935f;
+    background:  #5E8B7E;
 }
 
 #res:hover {
-    background:  #7bce97;
-    color:  #45935f;
+    background:  #DFEEEA;
+    color:  #5E8B7E;
     border: 2px solid #5E8B7E;
     text-decoration: none;
 }
