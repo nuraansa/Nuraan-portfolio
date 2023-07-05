@@ -1,51 +1,54 @@
 <template>
-    <div class="container">
+    <div class="bg">
         <div class="container about">
-            <h1 class="text-center p-5">About Me</h1>
-            <div class="container text-center">
+            <h1 class="text-center p-5">Welcome to my portfolio!</h1>
+            <div class="container text-center p-2">
                 <div class="row">
                     <div class="col">
-                        <h3>I'm Nuraan Samodien</h3>
-                        <img id="me" src="https://i.postimg.cc/h4M6rckp/flork.png" alt="me">
+                        <!-- <h2>I'm Nuraan Samodien</h2> -->
+                        <img id="me" src="https://i.postimg.cc/h4M6rckp/flork.png" alt="me" style="width: 18rem">
                     </div>
                     <div class="col">
-                        <h2>About Me</h2>
-                        Hello World! My name is Nuraan Samodien Davids.
-                        I enjoy acquiring new knowledge and mastering new skills. <br> My interest in computers was sparked
-                        years ago
-                        when I
-                        was a little girl, I used to enjoy experimenting,learning and figuring out new things on our family
-                        computer.
-                        <br>
-                        Fast-forward to today, I am currently studying coding at Life Choices Academy with the goal of one
-                        day becoming
-                        a full stack web developer and creating awesome things.
+                        <h1>About Me</h1>
+                        <p class="about-info"> Hello World! My name is Nuraan Samodien Davids.
+                            I enjoy acquiring new knowledge and mastering new skills. <br> My interest in computers was
+                            sparked
+                            years ago
+                            when I
+                            was a little girl, I used to enjoy experimenting,learning and figuring out new things on our
+                            family
+                            computer.
+                            <br>
+                            Fast-forward to today, I am currently studying coding at Life Choices Academy with the goal of
+                            one
+                            day becoming
+                            a full stack web developer and creating awesome things.
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <div class="container-fluid">
-                <h1>Hobbies & Interests</h1>
-                <div class="container">
-                    <div class="row img-div g-3">
-                        <div class="col" v-for="item in hobbies" :key="item.id">
-                            <div class="flip-card">
-                                <div class="flip-card-inner">
-                                    <div class="flip-card-front">
-                                        <img :src="item.image" :alt="item.title" style="height: 300px; width: 300px" />
-                                    </div>
-                                    <div class="flip-card-back">
-                                        <h2>{{ item.title }}</h2>
-                                        <p>
-                                            {{ item.description }}
-                                        </p>
-                                    </div>
+            <h1 class="p-5">Hobbies & Interests</h1>
+            <div class="container pb-3">
+                <div class="row img-div g-3">
+                    <div class="col" v-for="item in hobbies" :key="item.id">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img :src="item.image" :alt="item.title" style="height: 300px; width: 300px" />
+                                </div>
+                                <div class="flip-card-back">
+                                    <h2>{{ item.title }}</h2>
+                                    <p>
+                                        {{ item.description }}
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <router-link to="/resume" id="res" class="btn btn-light m-3 p-3">View Resume</router-link>
         </div>
     </div>
 </template>
@@ -64,6 +67,14 @@ export default {
 </script>
 
 <style scoped>
+.bg {
+    background: #A7C4BC;
+}
+
+.about-info {
+    font-size: 1.5rem;
+}
+
 /* flip-card */
 .img-div {
     width: 100%;
@@ -105,8 +116,22 @@ export default {
 }
 
 .flip-card-back {
-    background-color: #c69d8f;
+    background-color: #DFEEEA;
     color: black;
     transform: rotateY(180deg);
 }
+
+#res {
+    text-decoration: none;
+    color: #DFEEEA; 
+    background: #5E8B7E;
+}
+
+#res:hover {
+    background: #A7C4BC;
+    color: #5E8B7E;
+    border: 2px solid #5E8B7E;
+    text-decoration: none;
+}
+
 </style>
