@@ -2,7 +2,7 @@
     <div class="p-4 bg">
 
         <div class="container-fluid">
-            <h1 class="display-1">Testimonials</h1>
+            <h1 class="display-1 p-5">Testimonials</h1>
             <div class="row">
                 <div class="col">
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -43,6 +43,7 @@
                     </div>
                 </div>
             </div>
+            <router-link to="/contact" id="res" class="btn m-5 p-3">Conntact Me</router-link>
         </div>
     </div>
 </template>
@@ -62,10 +63,25 @@ export default {
 
 <style scoped>
 .bg {
-    background: #C4D7B2;
+    background: #A7C4BC;
     height: 90vh;
 }
+h1 {
+  text-shadow: 2px 2px #DFEEEA;
+}
 .it{
-    background: #A0C49D;
+    background: #DFEEEA;
+}
+#res {
+    text-decoration: none;
+    color: #DFEEEA; 
+    background:  #5E8B7E;
+}
+
+#res:hover {
+    background:  #DFEEEA;
+    color:  #5E8B7E;
+    border: 2px solid #5E8B7E;
+    text-decoration: none;
 }
 </style>

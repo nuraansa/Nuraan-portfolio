@@ -1,6 +1,7 @@
 <template>
     <div class="home">
       <h1 class="display-1 me p-5">Nuraan <br> Samodien <br> Davids</h1>
+      <h2 class="display-5 m-3 me port">Portfolio</h2>
     </div>
 </template>
 
@@ -16,11 +17,14 @@
     background-size: cover;
     height: 100vh;
   }
+.port{
+  padding: 4rem;
+}
 .me {
     white-space: nowrap;
     overflow: hidden;
     width: 50%;
-    animation: typing 1.9s steps(25), cursor 0.4s step-end infinite alternate;
+    animation: typing 2s steps(30), cursor 1s step-end infinite alternate;
   }
   @keyframes cursor {
     50% {

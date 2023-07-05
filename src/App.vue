@@ -18,7 +18,7 @@ export default {
 
 <style>
 #app {
-  font-family: 'Darker Grotesque', sans-serif;
+  font-family:  'Caprasimo';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
