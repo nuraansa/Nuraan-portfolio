@@ -4,11 +4,11 @@
             <h1 class="display-1 text-center p-5" data-aos="zoom-in">Welcome to my portfolio!</h1>
             <div class="container text-center p-2">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-5">
                         <!-- <h2>I'm Nuraan Samodien</h2> -->
                         <img class="rounded shadow" id="me" src="https://i.postimg.cc/y8WsnmxC/Screenshot-2023-07-05-at-6-07-02-PM-removebg-preview.png" alt="me" style="width: 18rem">
                     </div>
-                    <div class="col">
+                    <div class="col-6">
                         <h1>About Me</h1> <hr>
                         <p class="about-info lh-base"> Hello World! My name is Nuraan Samodien Davids.
                             I enjoy acquiring new knowledge and mastering new skills. <br> My interest in computers

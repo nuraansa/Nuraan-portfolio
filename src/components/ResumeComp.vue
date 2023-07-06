@@ -28,7 +28,7 @@
             </div>
             <div class="row border-bottom" style="margin: 20px; margin-top: 10px; font-size: 20px">
                 <div class="col border-end">DOB: 14 February 2000</div>
-                <div class="col">Age: 22</div>
+                <div class="col">Age: 23</div>
             </div>
             <div class="row border-bottom" style="margin: 20px; font-size: 20px">
                 <div class="col border-end">City: Cape Town</div>
@@ -38,7 +38,12 @@
                 <div class="col border-end">Language: English</div>
                 <div class="col">Cell: 012-345-6789</div>
             </div>
-        </div>
+            <div class="row border-bottom" style="margin: 25px; font-size: 20px">
+                <div class="col border-end"><a href="https://www.linkedin.com/in/nuraan-samodien-154315282/">LinkedIn</a>
+            </div>
+                <div class="col"><a href="https://drive.google.com/file/d/1OFU4pQxRyhzB8y9E6ed9a9kDURg17vpH/view?usp=share_link">View CV</a></div>
+            </div>
+            </div>
 
         <div class="container" id="res1">
             <h1 class="display-3 p-3">Education</h1>
@@ -141,7 +146,6 @@ export default {
     justify-content: center;
     align-items: center;
 }
-
 .bg {
     background: #A7C4BC;
 }

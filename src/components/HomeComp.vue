@@ -2,7 +2,7 @@
   <div class="home">
     <div class="container-fluid" id="background">
       <h1 class="display-1 me p-5">Nuraan <br> Samodien <br> Davids</h1>
-      <h2 class="display-5 m-3 me port">Portfolio</h2>
+      <h2 class="display-5 m-3 me port">Portfolio <br> ⟶</h2>
     </div>
   </div>
 </template>
@@ -45,4 +45,5 @@ export default {
   background-image: url(https://i.postimg.cc/6qgKqzcy/homepage.png);
   background-size: cover;
 }
+
 </style>
