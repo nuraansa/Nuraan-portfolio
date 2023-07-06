@@ -1,27 +1,30 @@
 <template>
     <div class="bg">
         <h1 class="display-3 p-5">Contact Me</h1>
+        <form action="https://formspree.io/f/mrgwgbkq" method="POST">
         <div class="container-fluid">
             <div class="container form shadow-lg">
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Full Name</label>
                     <input type="text" class="form-control mx-auto" id="exampleFormControlInput1"
-                        placeholder="name & surname" required>
+                        placeholder="Enter Full Name"  name="name" required>
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput2" class="form-label">Email address</label>
                     <input type="email" class="form-control mx-auto" id="exampleFormControlInput2"
-                        placeholder="name@example.com" required>
+                        placeholder="name@example.com" name="email" required>
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                    <textarea class="form-control mx-auto" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                    <textarea class="form-control mx-auto" placeholder="Enter message here" id="exampleFormControlTextarea1"  name="text" rows="3" required></textarea>
                 </div>
                 <div class="col-auto p-3">
-                    <button type="submit" class="btn res">Submit</button>
+                    <button type="submit" class="btn res m-1">Submit</button>
+                    <button type="reset" class="btn res">Clear</button>
                 </div>
             </div>
         </div>
+    </form>
     </div>
 </template>
 
