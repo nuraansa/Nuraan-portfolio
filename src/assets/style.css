@@ -2,7 +2,11 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Darker Grotesque', sans-serif;
-    
+    box-sizing: border-box;    
+}
+
+
+html,
+body{
+    overflow-x:hidden;
 }

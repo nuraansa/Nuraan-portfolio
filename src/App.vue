@@ -25,6 +25,11 @@ export default {
   color: #2F5D62;
 }
 
+html,
+body{
+  overflow-x:hidden;
+}
+
 ::-webkit-scrollbar{
   display: none;
 }

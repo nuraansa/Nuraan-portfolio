@@ -1,11 +1,11 @@
 <template>
     <div class="bg">
         <h1 class="display-1 p-5">Projects</h1>
-        <div class="container p-4">
+        <div class="container-fluid">
             <div class="row row-cols-1 row-cols-md-3 row-cols-sm-1 g-4">
                 <div class="col p-2" v-for="item in projects" :key="item.id">
-                    <div class="card mb-3 shadow-lg h-100" style="width: 20rem;">
-                        <img :src="item.image" class="card-img-top" :alt="item.id">
+                    <div class="card mb-3 shadow-lg h-100">
+                        <img :src="item.image" class="card-img-top" :alt="item.id" loading="lazy">
                         <div class="card-body">
                             <h5 class="card-title">{{ item.name }}</h5>
                             <p class="card-text">{{ item.description }}</p>
