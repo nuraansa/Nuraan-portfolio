@@ -34,11 +34,11 @@ export default {
 
 h6 {
   margin-top: 1rem;
-  color:#2F5D62;
+  color:#DFEEEA;
 }
 
 i {
-  color:#2F5D62;
+  color:#DFEEEA;
   margin: 1rem;
 }
 </style>

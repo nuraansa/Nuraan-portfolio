@@ -1,6 +1,6 @@
 <template>
     <div class="bg">
-        <h1 class="display-1 text-center p-4">Resume</h1>
+        <h1 class="display-1 text-center p-4" data-aos="zoom-in">Resume</h1>
         <!-- <div class="container text-start">
             <div class="card p-5 in">
                 <div class="row mx-auto">
@@ -75,18 +75,18 @@
         </div>
         <h1 class="display-3 p-3">Soft Skills</h1>
         <div class="container-fluid" id="soft">
-        <div class="card in shadow-lg">
+        <div class="card in shadow-lg w-50">
             <div class="row" id="row">
-                <div class="col text-center">
+                <div class="col text-center p-0">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Problem solving
+                        <li class="list-group-item border-end">Problem solving
                         </li>
-                        <li class="list-group-item">Communication
+                        <li class="list-group-item border-end">Communication
                         </li>
-                        <li class="list-group-item">Addaptability</li>
+                        <li class="list-group-item border-end">Addaptability</li>
                     </ul>
                 </div>
-                <div class="col text-center">
+                <div class="col text-center p-0">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Critical thinking</li>
                         <li class="list-group-item">Time management</li>
@@ -100,8 +100,8 @@
             <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-md-3 d-flex mx-auto g-4" id="col">
                 <div class="col" id="pad" v-for="item in skills" :key="item.id">
                     <div class="card skill shadow-lg">
-                        <div class="card-body">
-                            <i :class="item.icon" :key="item.id" style="color: #2F5D62;"></i>
+                        <div class="card-body p-3">
+                            <i :class="item.icon" :key="item.id" style="color: #5E8B7E;"></i>
                             <h4 class="card-text">{{ item.skill }}</h4>
                         </div>
                     </div>
