@@ -40,7 +40,7 @@
             </div>
         </div>
 
-        <div class="container-fluid" id="res">
+        <div class="container" id="res1">
             <h1 class="display-3 p-3">Education</h1>
             <div class="card p-4 edu text-start shadow-lg mx-auto">
                 <div class="row g-0">
@@ -48,9 +48,9 @@
                         <div class="card-body ex">
                             <h5 class="card-title">{{ item.year }}</h5>
                             <p class="card-text">{{ item.description }}</p>
+                            <hr>
                         </div>
-                        <hr>
-                    </div>
+                    </div> 
                     <div class="col-md-4" id="imagee">
                         <img src="https://i.postimg.cc/MGsGH8GH/asal-lotfi-8e-PZbdxnpi0-unsplash.jpg" alt="img"
                             class="w-100 book">
@@ -146,8 +146,6 @@ export default {
     background: #A7C4BC;
 }
 
-#res {}
-
 h1 {
     text-shadow: 2px 2px #DFEEEA;
 }
@@ -161,11 +159,11 @@ h4 {
 }
 
 .ex {
-    padding: 0.5px;
+    padding: 1px;
 }
 
 @media(width < 980px) {
-    #res {
+    #res1 {
         padding: 0;
     }
 }
@@ -182,7 +180,7 @@ h4 {
         display:none;
     }
 
-    #res{
+    #res1{
         width:100% !important;
     }
 
