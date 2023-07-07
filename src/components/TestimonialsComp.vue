@@ -2,7 +2,7 @@
     <div class=" bg">
 
         <div class="container-fluid">
-            <h1 class="display-1">Testimonials</h1>
+            <h1 class="display-1 p-5" data-aos="zoom-in">Testimonials</h1>
             <div class="row">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
@@ -15,7 +15,7 @@
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
-                                            <h5 class="card-title">{{ item.name }}</h5>
+                                            <h4 class="card-title">{{ item.name }}</h4>
                                             <h6>{{ item.title }}</h6>
                                             <p class="card-text">
                                                 {{ item.content }}
@@ -41,7 +41,7 @@
                     </button>
                 </div>
             </div>
-            <router-link to="/contact" id="res" class="btn m-5 p-3">Conntact Me</router-link>
+            <router-link to="/contact" id="res" class="btn m-5 p-3">Contact Me</router-link>
         </div>
     </div>
 </template>

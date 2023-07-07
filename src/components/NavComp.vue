@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand " href="#"> <img src="https://i.postimg.cc/T2k5Y6VX/NSD-logo.png" class="logo" alt="logo" loading="lazy"></a>
+        <div class="container">
+            <a class="navbar-brand" href="/"> <img src="https://i.postimg.cc/T2k5Y6VX/NSD-logo.png" class="logo" alt="logo" loading="lazy"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -15,7 +15,7 @@
                         <router-link to="/about">About</router-link> |
                     </li>
                     <li class="nav-item">
-                        <router-link to="/resume">Resume</router-link> |
+                        <router-link to="/resume" exact v-scroll-to="{ el: '#resume'}">Resume</router-link> |
                     </li>
                     <li class="nav-item">
                         <router-link to="/projects">Projects</router-link> |
@@ -45,7 +45,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5rem;
+    /* height: 5rem; */
 }
 
 nav a {
@@ -65,4 +65,5 @@ nav a.router-link-exact-active {
 .logo {
     width: 9rem;
 }
+
 </style>
