@@ -7,7 +7,7 @@
                 <div class="row top-row">
                     <div class="col-5">
                         <!-- <h2>I'm Nuraan Samodien</h2> -->
-                        <img class="rounded shadow" id="me" src="https://i.postimg.cc/y8WsnmxC/Screenshot-2023-07-05-at-6-07-02-PM-removebg-preview.png" alt="me" style="width: 18rem">
+                        <img class="rounded shadow" id="me" src="https://i.postimg.cc/y8WsnmxC/Screenshot-2023-07-05-at-6-07-02-PM-removebg-preview.png" alt="me" style="width: 15rem">
                     </div>
                     <div class="col-5">
                         <h1  data-aos="zoom-in">About Me</h1> <hr>

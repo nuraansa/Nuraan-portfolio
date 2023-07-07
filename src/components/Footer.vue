@@ -14,8 +14,7 @@
                 class="fa-brands fa-linkedin fa-2xl"></i></a>
           </div>
         </div>
-        <div class="col order-last text-start p-3">
-          Email: nuraansa1@gmail.com <br> Cell: 012-345-6789
+        <div class="col order-last p-3"> <p>nuraansa1@gmail.com <br> +27 71 876 3680</p>
         </div>
       </div>
     </div>
